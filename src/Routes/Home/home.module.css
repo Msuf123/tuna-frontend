@@ -1,0 +1,54 @@
+.main{
+    background-image: url('../../Images/back.jpg');
+    background-repeat: no-repeat;
+   
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+.main::before{
+    content: '';
+    top: 0px ;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: 1;
+}
+.main .content{
+    overflow: hidden;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+.main .content :first-child{
+color: yellow;
+text-align: center;
+font-size: 39px;
+
+}
+.main .content :nth-child(2){
+    position: absolute;
+    bottom: 0px;
+
+}
+.main .content :nth-child(3){
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+.content button{
+    background-color: rgb(218, 162, 10);
+    font-size: 29px;
+    margin: 10% 50%;
+    transform: translate(-50%,0px);
+    padding: 5px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border: 5px solid rgb(153, 131, 4);
+}

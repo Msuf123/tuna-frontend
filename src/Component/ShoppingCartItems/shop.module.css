@@ -1,0 +1,7 @@
+.main{
+    
+    width: 98vw;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
