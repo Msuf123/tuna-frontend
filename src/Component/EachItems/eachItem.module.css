@@ -1,5 +1,25 @@
 .main{
-    border: 2px solid black;
-    width: 400px;
-
+    
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 2px rgb(218, 217, 217);
+    transition: all 0.2s linear;
+}
+.footer{
+     display: flex;
+     background-color: rgb(245, 243, 243);
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: clamp(18px,50vw,23px);
+    padding: 4px;
+}
+.main img{
+    width: clamp(250px,25vw,400px);
+}
+.main:hover{
+    transform: scale(1.03);
+    
 }

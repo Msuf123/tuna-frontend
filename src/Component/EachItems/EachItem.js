@@ -5,8 +5,10 @@ export default function EachItem(){
         <div className={style.main}>
 
             <img src={src}></img>
-            <span>Name</span>
-            <span>Price</span>
+            <div className={style.footer}>
+                <span>Name</span>
+                <span>Price</span>
+            </div>
         </div>
     )
 }

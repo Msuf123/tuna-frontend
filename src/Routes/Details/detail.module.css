@@ -1,0 +1,13 @@
+.main{
+    background-color: red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+.paragraph{
+    margin: 100px 20px;
+    justify-self: start;
+    background-color: rebeccapurple;
+}
