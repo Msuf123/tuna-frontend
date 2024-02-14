@@ -9,6 +9,8 @@ import Cart from './Routes/Cart/Cart';
 import Profile from './Routes/Profile/Profile';
 import Loading from './Component/Loading/Loading';
 import Login from './Routes/Login/Login';
+import PasswordReset from './Routes/PasswordReset/PasswordReset';
+import Register from './Routes/Register/Register';
 
 function App() {
   const router=createBrowserRouter(createRoutesFromElements(
@@ -19,6 +21,8 @@ function App() {
           <Route path='/cart' element={<Cart></Cart>}></Route>
           <Route path='/profile' element={<Profile></Profile>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/register' element={<Register></Register>}></Route>
+          <Route path='/passwordReset' element={<PasswordReset></PasswordReset>}></Route>
           <Route path='*' element={<Loading></Loading>}></Route>
     </Route>
   ))
