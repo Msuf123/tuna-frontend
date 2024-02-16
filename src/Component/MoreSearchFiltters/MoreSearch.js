@@ -3,7 +3,7 @@ export default function MoreSearch(){
     return(
         <div className={style.main}>
             
-            <input type='range'></input>
+            
             <div>
             <input type='checkbox'></input>
             <span>Fresh</span>

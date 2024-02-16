@@ -5,6 +5,7 @@ export default function Filter(){
     return(
         <div className={style.main}>
             <SeachBar></SeachBar>
+            <input type='range'></input>
             <MoreSearch></MoreSearch>
             <button>Cart</button>
         </div>

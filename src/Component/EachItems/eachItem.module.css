@@ -10,7 +10,8 @@
 }
 .footer{
      display: flex;
-     background-color: rgb(245, 243, 243);
+     border-top: 0.4px solid rgb(238, 238, 238);
+     background-color: rgb(255, 255, 255);
     justify-content: space-around;
     font-weight: 700;
     font-size: clamp(18px,50vw,23px);
@@ -22,4 +23,20 @@
 .main:hover{
     transform: scale(1.03);
     
+}
+@media only screen and (max-width:1670px) {
+    .main img{
+        width: clamp(20px,20vw,400px);
+    }
+}
+@media only screen and (max-width:1106px) {
+    .main img{
+        width: clamp(20px,27vw,400px);
+    }
+}
+@media only screen and (max-width:870px) {
+    
+    .main img{
+        width: clamp(20px,40vw,400px);
+    }
 }
