@@ -11,8 +11,12 @@ import Loading from './Component/Loading/Loading';
 import Login from './Routes/Login/Login';
 import PasswordReset from './Routes/PasswordReset/PasswordReset';
 import Register from './Routes/Register/Register';
+import EmailVerify from './Component/EmailVerify/EmailVerify';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 function App() {
+ 
   const router=createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Root></Root>}>
           <Route index element={<Home></Home>}></Route>
@@ -21,7 +25,10 @@ function App() {
           <Route path='/cart' element={<Cart></Cart>}></Route>
           <Route path='/profile' element={<Profile></Profile>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
-          <Route path='/register' element={<Register></Register>}></Route>
+          <Route path='/register' element={<Register></Register>}>
+            
+          </Route>
+         < Route path='/register/verify' element={<EmailVerify></EmailVerify>}></Route>
           <Route path='/passwordReset' element={<PasswordReset></PasswordReset>}></Route>
           <Route path='*' element={<Loading></Loading>}></Route>
     </Route>

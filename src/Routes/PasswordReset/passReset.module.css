@@ -17,6 +17,9 @@
 .small{
     font-size: 15px;
 }
+.main input{
+    font-size: 15px;
+}
 .main button{
     width: max-content;
     padding: 2px 10px;

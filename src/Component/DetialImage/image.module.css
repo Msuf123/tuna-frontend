@@ -1,10 +1,10 @@
 .main{
-    justify-self: end;
+    justify-self: center;
     margin: 100px 20px;
 }
 .main img{
     border: 2px solid black;
-    width: 200px;
+    width: clamp(400px,70vw,700px);
     background-color: green;
   
 }

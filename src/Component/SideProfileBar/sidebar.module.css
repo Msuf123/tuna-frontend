@@ -1,0 +1,16 @@
+.main{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100vh;
+    justify-content: flex-start;
+    background-color: rgb(250, 248, 248);
+    border-right: 2px solid rgb(199, 199, 199);
+    padding-top: 30px;
+}
+.main button{
+    margin:20px 15px 0px 15px;
+    
+}

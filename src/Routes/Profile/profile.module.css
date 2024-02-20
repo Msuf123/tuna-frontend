@@ -1,0 +1,8 @@
+.text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+}

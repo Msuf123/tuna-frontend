@@ -1,6 +1,8 @@
+import { startTransition } from 'react'
 import style from './register.module.css'
 export default function Register(){
     return(
+    <div className={style.outer}>
         <div className={style.main}>
             <div className={style.text}>
                     <span>Enter emial id:</span>
@@ -14,7 +16,16 @@ export default function Register(){
             <span>Enter password:</span>
             <input placeholder="Enter password"></input>
             </div>
-            <button>Sign-Up</button>
+            <button onClick={()=>{
+                fetch('http://localhost:3003/register',{method:'Post',credentials:'include',
+            headers:{
+                "Content-Type": "application/json"
+            },body:JSON.stringify({userName:'Akshat MAlik',password:'123sd',emailId:'akshatmalik18t@gmail.com'})
+            }).then((s)=>{
+                console.log(s)
+            })
+            }}>Sign-Up</button>
+        </div>
         </div>
     )
 }
