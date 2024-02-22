@@ -7,8 +7,9 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import rootUrl from './Routes/Root/rootUrl';
 import fishSlice from './Component/ShoppingCartItems/FishSlice';
+import popSlice from './Component/Popup/popSlice';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const store=configureStore({reducer:{url:rootUrl,fishData:fishSlice}})
+const store=configureStore({reducer:{url:rootUrl,fishData:fishSlice,popup:popSlice}})
 root.render(
    <Provider store={store}>
     <App />

@@ -6,3 +6,32 @@
     margin-top: 10px;
     font-weight: 600;
 }
+.main .buttons{
+    background-color: red;
+    margin: 30vh auto;
+    font-size: 25px;
+    padding: 4px 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+      transition: all 0.2s linear;
+}
+.main .buttons:hover{
+    background-color: rgb(247, 159, 159);
+}
+.home{
+    background-color:white;
+    margin: 30vh auto;
+    font-size: 25px;
+    padding: 4px 20px;
+    border: 2px solid rgb(204, 199, 199);
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+      transition: all 0.2s linear;
+}
+.home:hover{
+    background-color: rgb(215, 245, 109);
+    
+}
