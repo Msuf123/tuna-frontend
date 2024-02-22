@@ -1,13 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 import fetchFishData from "./GetFishData";
+import postCart from "../../Routes/Cart/cartData";
+import particularFish from "./particularFish";
 
 const fishSlice=createSlice({
     name:'fishSlice',
-    initialState:[{fish_name:'Tuna',fish_price:100,image:'https://as2.ftcdn.net/v2/jpg/03/14/68/67/1000_F_314686744_dvRiiXuRg6b9EIA1a4wzadc8xEwFYi82.jpg'}]
+    initialState:[]
     ,extraReducers(builder){
         builder.addCase(fetchFishData.fulfilled,(state,action)=>{
             console.log(action.payload)
-            return [...action.payload]
+            return action.payload
+        })
+        builder.addCase(postCart.fulfilled,(state,action)=>{
+            console.log(action.payload)
+            return action.payload
+        })
+        builder.addCase(particularFish.fulfilled,(state,action)=>{
+            console.log(action.payload)
+          return action.payload
         })
     }
     

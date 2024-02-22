@@ -5,7 +5,7 @@ export default function Shop(){
     
     return(
         <div className={style.main}>
-            <Filter></Filter>
+            {/* <Filter></Filter> */}
             <ProductSection></ProductSection>
         </div>
     )

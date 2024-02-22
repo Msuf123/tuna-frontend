@@ -2,7 +2,8 @@
     
     padding: 30px;
     overflow: scroll;
-   
+   align-self: center;
+   justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 30px;
